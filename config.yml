@@ -19,7 +19,7 @@ jobs:
     environment:
       TEST_REPORTS: /tmp/test-reports
 
-    working_directory: ~/my-project
+    working_directory: ~/podam
 
     branches:
       ignore:
