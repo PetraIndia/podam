@@ -19,12 +19,12 @@ jobs:
       - save_cache:
           paths:
             - ~/.m2
-          key: podem-{{ checksum "pom.xml" }}
+          key: podam-{{ checksum "pom.xml" }}
       
       - run: mvn package
       
       - store_test_results:
-          path: test_results/testreport
+          path:s src/testreport
       
       - store_artifacts:
-          path: target/podam-SNAPSHOT.jar
+          path: src/testoutput.jar
