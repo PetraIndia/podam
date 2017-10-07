@@ -24,7 +24,7 @@ jobs:
       - run: mvn package
       
       - store_test_results:
-          path:s src/testreport
+          path: src/testreport
       
       - store_artifacts:
           path: src/testoutput.jar
